@@ -18,7 +18,7 @@ reproduce the idea of multiple map/reduce workers working together on a differen
 
 The Framework has been adopted by the Industry as an efficient solution to many problems with very large Data sets. One of which includes the **Single destination shortest Path Problem** .
 
-With the help of this [paper](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-018-0125-8), I was able to adapt the framework to solve this problem using Dijkstra Algorithm BFS Algorithm.
+With the help of this [paper](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-018-0125-8), I was able to adapt the framework to solve this problem using Dijkstra BFS Algorithm.
 
 # Algorithm
 ---
