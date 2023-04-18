@@ -1,6 +1,5 @@
 ﻿/**
- * A pair of two values. The pair is immutable: Once it is created, it is not
- * possible to modify its elements. Helper Class for the MapReduceLibrary .
+ * A pair of two values.  Helper Class for the MapReduceLibrary .
  *
  * @param K the type of the first element of the pair
  * @param V the type of the second element of the pair
