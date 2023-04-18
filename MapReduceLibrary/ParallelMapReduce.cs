@@ -62,7 +62,7 @@ namespace MapReduce
                
             });
 
-            #endregion Reduce Phase
+            #endregion Map Phase
 
             List<Pair<OutKey, OutValue>> result = new();
 
