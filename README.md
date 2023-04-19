@@ -10,7 +10,6 @@ Here is my simplified implementation of the Algorithm.
 
 # Description
 
----
 
 This Project is a simplified version of the [**Map-Reduce Framework**](https://en.wikipedia.org/wiki/MapReduce).
 Simplified in the sense that it is not meant to be executed in a distributed file environment with multiple map/reduce workers distributed over a network, but mainly just a blueprint on how the Framework works, and with the help of multithreading I could
