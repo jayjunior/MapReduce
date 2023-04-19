@@ -65,7 +65,7 @@ namespace Dijkstra {
             get; set;
         }
 
-        public int[] FindShortestPathsSequential(int[,] adjacencyMatrix, int startNode)
+        public int[] FindShortestPaths(int[,] adjacencyMatrix, int startNode)
 
         {
 

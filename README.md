@@ -20,6 +20,6 @@ The Framework has been adopted by the Industry as an efficient solution to many 
 With the help of this [paper](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-018-0125-8), I was able to use the framework to solve this problem using Dijkstra BFS Algorithm.
 
 # Algorithm
----
+
 ![Map Reduce Framework](MapReduceAlgorithm.png "Map reduce Framework")
 

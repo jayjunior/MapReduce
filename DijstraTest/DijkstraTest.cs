@@ -21,7 +21,7 @@ namespace DijstraTest {
 
             int[] expected1 = { 5, 10, 8, 11, 0 };
 
-            int[] actual1 = sut.FindShortestPathsSequential(test1, 4);
+            int[] actual1 = sut.FindShortestPaths(test1, 4);
 
             CollectionAssert.AreEqual(expected1, actual1, "Error!");
 
@@ -36,7 +36,7 @@ namespace DijstraTest {
 
             int[] expected2 = { 0, 8, 1, 5, 10, 7 };
 
-            int[] actual2 = sut.FindShortestPathsSequential(test2, 0);
+            int[] actual2 = sut.FindShortestPaths(test2, 0);
 
             CollectionAssert.AreEqual(expected2, actual2, "Error!");
 
@@ -51,9 +51,26 @@ namespace DijstraTest {
 
             int[] expected3 = { 0, 7, 9, 16, 19, 17 };
 
-            int[] actual3 = sut.FindShortestPathsSequential(test3, 0);
+            int[] actual3 = sut.FindShortestPaths(test3, 0);
 
             CollectionAssert.AreEqual(expected3, actual3, "Error!");
+
+
+            int[,] test4 = {
+                {0, 10 , 20 , -1 , -1 , -1 },
+                {-1, 0 , -1 , 50 , 10 , -1 },
+                {-1, -1, 0  , 20 , 33 , -1 },
+                {-1, -1, -1 , 0  , 20 , 2  },
+                {-1, -1, -1 , -1 , 0  , 1  },
+                {-1, -1, -1 , -1 , -1 , 0  },
+            };
+
+            int[] expected4 = { -2, -2, 0, 20, 33, 22 };
+
+            int[] actual4 = sut.FindShortestPaths(test4, 2);
+
+            CollectionAssert.AreEqual(expected4, actual4, "Error!");
+
         }
 
 
