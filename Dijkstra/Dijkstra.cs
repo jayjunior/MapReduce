@@ -84,11 +84,14 @@ namespace Dijkstra {
 
             int[] result = new int[adjacencyMatrix.GetLength(0)];
 
-            initialList.Add(new Pair<int, int>(startNode, 0));
 
-            for (int i = 1; i < adjacencyMatrix.GetLength(0); i++)
+            for (int i = 0; i < adjacencyMatrix.GetLength(0); i++)
             {
-                initialList.Add(new Pair<int, int>(i, INFINITY));
+                if (i == startNode) initialList.Add(new Pair<int, int>(i, 0));
+                else {
+                    initialList.Add(new Pair<int, int>(i, INFINITY));
+                }
+                
             }
 
             List<Pair<int, int>> tmp;
