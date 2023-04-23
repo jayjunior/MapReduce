@@ -1,5 +1,4 @@
-﻿using System;
-using MapReduce;
+﻿using MapReduce;
 
 namespace Dijkstra {
     public class Dijkstra
@@ -7,7 +6,9 @@ namespace Dijkstra {
 
         static readonly int INFINITY = -2;
 
-        bool _Parallel = false;
+        static readonly int notDirectNeighbours = -1;
+
+        private bool _Parallel = false;
 
         public Dijkstra(bool parallel) {
             this._Parallel = parallel;
@@ -28,7 +29,7 @@ namespace Dijkstra {
                 List<Pair<int, int>> result = new();
                 for (int neighbour = 0; neighbour < adjacencyMatrix.GetLength(0); neighbour++)
                 {
-                    if (adjacencyMatrix[node, neighbour] == -1) continue;
+                    if (adjacencyMatrix[node, neighbour] == notDirectNeighbours) continue;
                     if (cost == INFINITY || node == neighbour) result.Add(new Pair<int, int>(neighbour, cost));
                     else
                     {
@@ -62,7 +63,7 @@ namespace Dijkstra {
         }
 
         public bool Parallel {
-            get; set;
+            get => this._Parallel ; set => this._Parallel = value;
         }
 
         public int[] FindShortestPaths(int[,] adjacencyMatrix, int startNode)
@@ -121,10 +122,10 @@ namespace Dijkstra {
             return result;
 
         }
-
-        public static void Main(string[] arga) { }
-
+        public static void Main(String[] args) { }
     }
+
+    
 }
 
 

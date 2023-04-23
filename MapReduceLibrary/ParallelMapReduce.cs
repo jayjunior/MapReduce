@@ -4,9 +4,8 @@
 */
 
 
-using System;
 using System.Collections.Concurrent;
-using System.Threading.Tasks;
+
 
 namespace MapReduce
 {
@@ -47,7 +46,7 @@ namespace MapReduce
                 {
                     /*
                      * Locking here may seem unneeded due to the use of a Thread-safe dictionaray .
-                     * But race conditions may still occur between line 46 and 48 . Tho the need of the lock :) . 
+                     * But race conditions may still occur between line 54 and 56 . Tho the need of the lock :) . 
                      */
                     lock (_AccessLock)
                     {
